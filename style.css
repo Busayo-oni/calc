@@ -10,30 +10,29 @@ body{
     font-family: arial, sans-serif;
     background-color: hsl(0, 0%, 0%);
     border-radius: 15px;
-    max-width: 70vh;
-    overflow: hidden;
-    height: 90vh;
+    width: 60vh;
+    /* overflow: hidden; */
+    height: 100vh;
     padding: 10px;
     /* display: flex;
     align-items: center;
     justify-content: center; */
 }
 .display{
-    width: 54vh;
+    width: 58vh;
     border-radius: 15px;
     background-color:hsl(0, 0%, 90%);
     color: hsl(0, 0%, 0%);
     text-align: right;
-    height: 70px;
-    padding: 10px;
+    height: 90px;
+    padding:0px;
     font-size: 5rem;
-    margin: 20px;
-    margin-bottom: 0;
+    margin: 10px 5px;
 }
 #buttons{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 25px;
+    margin: 20px 0;
     text-align: center;
     cursor: pointer;
 }
@@ -45,6 +44,7 @@ body{
     height: 11vh;
     border-radius: 6px;
     background-color: hsl(0, 0%, 84%);
+    box-shadow: -8px -8px 15px hsla(255, 255, 255, 0.1), 5px 5px 15px hsla(0, 0, 0, 0.2);
     margin: 10px;
     display: flex;
     justify-content: center;
@@ -59,8 +59,8 @@ body{
 #equal .equal {
     background-color: orangered;
     display: grid;
-    width: 84%;
-    margin-left: 40px;
+    width: 93%;
+    margin-left: 10px;
     margin-top: -10;
     border-radius: 5px;
     height: 10vh;
@@ -72,6 +72,7 @@ body{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+
 }
 #equal .equal:hover{
     background-color: hsl(16, 100%, 60%);
@@ -87,4 +88,11 @@ body{
 }
 #buttons #clear:active{
     background-color: hsl(0, 100%, 70%);
+}
+
+@media screen and (max-width: 767px;) {
+    #buttons .button{
+        width: 8vh;
+        height: 8vh;
+    }
 }
